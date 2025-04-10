@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Ramdane AIT-YALA</title>
+  <link rel="stylesheet" href="css-portfolio.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Ramdane AIT-YALA</h1>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>👋 Salut, moi c’est Ramdane</h2>
+    <p>Administrateur Système, Réseaux & Sécurité</p>
+    <a href="#projects" class="cta">Voir mes projets</a>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Petite bio : Passionné par la technologie et la protection des données, je suis actuellement en alternance en tant qu'administrateur réseau et sécurité. J'aime explorer comment protéger les systèmes contre les menaces invisibles et garantir la tranquillité numérique. Dans mon rôle actuel, je conçois et gère des réseaux solides et sécurisés, protège les systèmes contre les intrusions et résous rapidement les problèmes techniques pour assurer un fonctionnement fluide et sécurisé. Je maîtrise des compétences techniques telles que TCP/IP, pare-feu, VPN et Wireshark, ainsi que l'analyse des vulnérabilités et la gestion des incidents sur les systèmes Windows et Linux. Mon objectif est de devenir un expert en cybersécurité capable de contrer les cybermenaces et de sécuriser les informations sensibles. Je travaille actuellement à l'obtention de certifications en cybersécurité pour renforcer mes connaissances. Toujours ouvert aux nouvelles idées et collaborations dans le domaine de la cybersécurité, je suis enthousiaste à l'idée de connecter avec des professionnels partageant la même passion.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <div class="skill-grid">
+      <div><strong>🖥️ Systèmes</strong><br>Linux, Windows Server, LVM...</div>
+      <div><strong>🌐 Réseaux</strong><br>TCP/IP, VPN, VLAN...</div>
+      <div><strong>🔐 Sécurité</strong><br>Wazuh, Fail2Ban, Firewall...</div>
+      <div><strong>⚙️ Scripting</strong><br>Bash, Python, Ansible...</div>
+      <div><strong>📦 Virtualisation</strong><br>Proxmox, Docker, VMware...</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projets</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Installation d’un serveur Ubuntu sécurisé</h3>
+        <p>RAID, LVM, Samba, scripts de backup, firewall, LEMP stack…</p>
+      </div>
+      <div class="project-card">
+        <h3>Cluster Proxmox & VM Windows</h3>
+        <p>Cluster haute dispo, jumbo frames, split brain, migration live…</p>
+      </div>
+      <div class="project-card">
+        <h3>Wazuh + Kali (Test d’attaques & réponses actives)</h3>
+        <p>Analyse des logs, déclenchement de règles, supervision sécurité.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Tu peux me contacter via ce formulaire ou directement :</p>
+
+    <!-- Formulaire de contact -->
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required placeholder="Ton nom">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Ton email">
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Ton message"></textarea>
+      </div>
+
+      <button type="submit" class="cta">Envoyer</button>
+    </form>
+
+    <p>Ou contacte-moi directement via :</p>
+    <ul>
+      <li><a href="mailto:ramdane827@gmail.com.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/ramdane-ait-yala/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/tonprofil" target="_blank">GitHub</a></li>
+    </ul>
+
+    <!-- Bouton Télécharger CV -->
+    <a href="CV Ramdane AIT-YALA - Master Cyber Sécurité.pdf" Documents="CV Ramdane AIT-YALA - Master Cyber Sécurité.pdf" class="cta">Télécharger mon CV</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ramdane AIT-YALA</p>
+  </footer>
+
+  <script src="java-portfolio.js"></script>
+</body>
+</html>

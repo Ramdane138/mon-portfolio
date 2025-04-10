@@ -1,0 +1,175 @@
+/* ==== BASE ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding-bottom: 50px;
+  }
+  
+  /* ==== NAVIGATION ==== */
+  header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    color: #00ffff;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #00ffff;
+  }
+  
+  /* ==== HERO ==== */
+  #hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  }
+  
+  #hero h2 {
+    font-size: 2.5em;
+    color: #00ffff;
+  }
+  
+  #hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #ccc;
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ffff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta:hover {
+    background: #00cccc;
+  }
+  
+  /* ==== SECTIONS ==== */
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    color: #00ffff;
+    margin-bottom: 30px;
+  }
+  
+  /* ==== FORMULAIRE DE CONTACT ==== */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 1.1em;
+    color: #00ffff;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 1em;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    padding: 12px;
+    background-color: #00ffff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #00cccc;
+  }
+  
+  /* ==== BOUTON TELECHARGER CV ==== */
+  #contact a.cta {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00ffff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  #contact a.cta:hover {
+    background-color: #00cccc;
+  }
+  
+  /* ==== FOOTER ==== */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #777;
+    margin-top: 40px;
+  }
+  
