@@ -1,19 +1,22 @@
-// Initialisation de EmailJS (ajouter ici la clé API générée sur EmailJS)
-emailjs.init("YOUR_USER_ID");
+// Animation au survol des cartes de projet
+const projectCards = document.querySelectorAll('.project-card');
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Empêche la soumission classique du formulaire
-  
-  // Récupération des données du formulaire
-  const formData = new FormData(event.target);
+projectCards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.transform = "scale(1.05)";
+    });
+    card.addEventListener('mouseout', () => {
+        card.style.transform = "scale(1)";
+    });
+});
 
-  // Envoi de l'email via EmailJS
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
-    .then(function(response) {
-      console.log('Succès de l’envoi', response);
-      alert('Merci pour ton message !');
-    }, function(error) {
-      console.log('Erreur', error);
-      alert('Erreur lors de l’envoi, essaie encore.');
+// Animation de défilement fluide vers les sections
+document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
